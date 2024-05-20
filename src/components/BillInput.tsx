@@ -28,7 +28,7 @@ const BillInput = ({ bill, setBill }: BillProps) => {
           placeholder="0"
           value={bill === 0 ? "" : bill}
           onChange={(e) => handleBill(e)}
-          className="w-full rounded-md bg-very-light-grayish-cyan py-1.5 pl-9 pr-5 text-right text-[1.55rem] tracking-[-0.03em] text-very-dark-cyan caret-strong-cyan ring-strong-cyan hover:ring-2 focus:outline-none focus:ring-2"
+          className="w-full rounded-md bg-very-light-grayish-cyan py-1.5 pl-9 pr-5 text-right text-[1.55rem] tracking-[-0.03em] text-very-dark-cyan caret-strong-cyan ring-strong-cyan transition hover:ring-2 focus:outline-none focus:ring-2"
         />
       </div>
     </div>

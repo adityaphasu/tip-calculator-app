@@ -34,14 +34,13 @@ const PeopleCount = ({ people, setPeople }: PeopleProps) => {
           id="people-count"
           placeholder="0"
           className={twMerge(
-            "w-full rounded-md bg-very-light-grayish-cyan px-[1.1rem] py-1.5 pl-9 text-right text-[1.55rem] tracking-[-0.03em] text-very-dark-cyan caret-strong-cyan focus:outline-none",
+            "w-full rounded-md bg-very-light-grayish-cyan px-[1.1rem] py-1.5 pl-9 text-right text-[1.55rem] tracking-[-0.03em] text-very-dark-cyan caret-strong-cyan transition focus:outline-none",
             error
               ? "ring-2 ring-red-500"
               : "ring-strong-cyan hover:ring-2 focus:ring-2",
           )}
           value={people === 0 ? "" : people}
           onChange={(e) => handlePeopleCountInput(e)}
-          required
         />
       </div>
     </div>
