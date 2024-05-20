@@ -48,7 +48,14 @@ const Form = () => {
       <div className="pt-8 lg:p-0">
         <div className="flex flex-col gap-9 rounded-xl bg-very-dark-cyan px-6 pb-6 pt-[2.4rem] lg:h-full lg:justify-between lg:px-10 lg:pb-[2.4rem] lg:pt-[3.4rem]">
           <Result tipAmount={tipAmount} totalAmount={totalAmount} />
-          <ResetButton />
+          <ResetButton
+            setBill={setBill}
+            setTipPercentage={setTipPercentage}
+            setCustomTip={setCustomTip}
+            setPeople={setPeople}
+            setTipAmount={setTipAmount}
+            setTotalAmount={setTotalAmount}
+          />
         </div>
       </div>
     </form>
