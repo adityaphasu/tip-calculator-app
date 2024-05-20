@@ -37,18 +37,18 @@ const TipSelection = ({
   };
 
   return (
-    <div>
-      <h2 className="text-dark-grayish-cyan">Select Tip %</h2>
+    <fieldset>
+      <legend className="text-dark-grayish-cyan">Select Tip %</legend>
       <div className="grid grid-cols-2 gap-4 pr-[0.1rem] pt-4 lg:grid-cols-3">
         {tipPercentages.map((percentage) => (
           <div key={percentage}>
             <label
               htmlFor={`tip-${percentage}`}
               className={twMerge(
-                "inline-block size-full rounded-md bg-very-dark-cyan py-[0.52rem] text-center text-2xl text-white",
+                "inline-block size-full rounded-md bg-very-dark-cyan py-[0.52rem] text-center text-2xl text-white transition",
                 percentage === tipPercentage
                   ? "bg-strong-cyan text-very-dark-cyan"
-                  : "cursor-pointer hover:bg-light-grayish-cyan hover:text-very-dark-cyan",
+                  : "hover:bg-light-cyan cursor-pointer hover:text-very-dark-cyan",
               )}
             >
               {percentage}%
@@ -59,7 +59,7 @@ const TipSelection = ({
               name="tip"
               value={percentage}
               onClick={() => handleTip(percentage)}
-              className="appearance-none"
+              className="appearance-none "
             />
           </div>
         ))}
@@ -72,7 +72,7 @@ const TipSelection = ({
             type="number"
             id="custom-tip"
             className={twMerge(
-              "h-full w-full appearance-none rounded-md bg-very-light-grayish-cyan pr-4 text-right text-2xl text-very-dark-cyan placeholder-dark-grayish-cyan caret-strong-cyan ring-strong-cyan hover:ring-2 focus:outline-none focus:ring-2 ",
+              "h-full w-full appearance-none rounded-md bg-very-light-grayish-cyan pr-4 text-right text-2xl text-very-dark-cyan placeholder-dark-grayish-cyan caret-strong-cyan ring-strong-cyan transition hover:ring-2 focus:outline-none focus:ring-2 ",
               customTip ? "ring-2 ring-strong-cyan" : "ring-0",
             )}
             placeholder="Custom"
@@ -81,7 +81,7 @@ const TipSelection = ({
           />
         </div>
       </div>
-    </div>
+    </fieldset>
   );
 };
 export default TipSelection;
