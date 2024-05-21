@@ -9,10 +9,10 @@ const Result = ({ tipAmount, totalAmount }: ResultProps) => {
   return (
     <div className="space-y-6 lg:space-y-[3.25rem]">
       <div className="flex justify-between">
-        <h3 className="flex flex-col justify-center text-white">
+        <h2 className="flex flex-col justify-center text-white">
           Tip Amount{" "}
           <span className="text-[.8125rem] text-grayish-cyan">/ person</span>
-        </h3>
+        </h2>
         <p
           className={twMerge(
             "pt-1 text-strong-cyan",
@@ -23,9 +23,9 @@ const Result = ({ tipAmount, totalAmount }: ResultProps) => {
         </p>
       </div>
       <div className="flex justify-between ">
-        <h3 className="flex flex-col justify-center text-white">
+        <h2 className="flex flex-col justify-center text-white">
           Total <span className="text-[13px] text-grayish-cyan">/ person</span>
-        </h3>
+        </h2>
         <p
           className={twMerge(
             "pt-1 text-strong-cyan lg:pt-0 ",

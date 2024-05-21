@@ -3,7 +3,7 @@ import Logo from "./assets/images/logo.svg";
 
 function App() {
   return (
-    <main className="flex h-full flex-col gap-10 xl:mt-[4.25rem] xl:gap-[5.5rem]">
+    <main className="flex h-full flex-col gap-10 md:gap-7 xl:mt-[4.25rem] xl:gap-[5.5rem]">
       <h1 className="sr-only">Tip Calculator</h1>
       <div className="flex justify-center pt-12 lg:pt-1 xl:pt-12">
         <img src={Logo} alt="" />
