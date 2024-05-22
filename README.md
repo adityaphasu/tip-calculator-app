@@ -1,30 +1,42 @@
-# React + TypeScript + Vite
+# Tip Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Tip Calculator app that allows users to calculate the correct tip and total cost of the bill per person. It is built with React and TypeScript and styled with tailwindcss. This is part of the [Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX) challenges.
 
-Currently, two official plugins are available:
+![screenshot](./public/desktop-preview.jpg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+<!-- Write features with emojis -->
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- 🧮 Calculate tip and total cost per person
+- 📈 Adjust the number of people splitting the bill
+- 📊 Adjust the tip percentage with custom percentages
+- 🔄 Reset button to clear all inputs
+- 📱 Responsive design
+- 🌐 PWA support
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=for-the-badge)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge)
+![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white&style=for-the-badge)
+![Prettier](https://img.shields.io/badge/-Prettier-F7B93E?logo=prettier&logoColor=white&style=for-the-badge)
+![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white&style=for-the-badge)
+![Vite PWA](https://img.shields.io/badge/-Vite_PWA-646CFF?logo=vite&logoColor=white&style=for-the-badge)
+
+## Installation
+
+1. Clone the repository.
+2. Run `npm install` to install the dependencies
+
+```
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. Run `npm run dev` to start the development server
+
+```
+npm run dev
+```
+
+4. Open [`http://localhost:5173`](http://localhost:5173) in your browser to view the app.
