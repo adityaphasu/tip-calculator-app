@@ -17,6 +17,12 @@ const PeopleCount = ({ people, setPeople }: PeopleProps) => {
     setPeople(value);
   };
 
+  const handleInputClick = () => {
+    if (people === 0) {
+      setError(true);
+    }
+  };
+
   return (
     <div className="flex flex-col gap-1.5">
       <div className="flex justify-between">
@@ -41,6 +47,7 @@ const PeopleCount = ({ people, setPeople }: PeopleProps) => {
           )}
           value={people === 0 ? "" : people}
           onChange={(e) => handlePeopleCountInput(e)}
+          onClick={handleInputClick}
         />
       </div>
     </div>
