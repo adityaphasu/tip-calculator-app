@@ -6,12 +6,12 @@ import Result from "./Result";
 import TipSelection from "./TipSelection";
 
 const Form = () => {
-  const [bill, setBill] = useState(142.55);
-  const [tipPercentage, setTipPercentage] = useState(15);
+  const [bill, setBill] = useState(0);
+  const [tipPercentage, setTipPercentage] = useState(0);
   const [customTip, setCustomTip] = useState(false);
-  const [people, setPeople] = useState(5);
-  const [tipAmount, setTipAmount] = useState(4.27);
-  const [totalAmount, setTotalAmount] = useState(32.79);
+  const [people, setPeople] = useState(0);
+  const [tipAmount, setTipAmount] = useState(0);
+  const [totalAmount, setTotalAmount] = useState(0);
 
   const calculateTip = () => {
     if (!isNaN(bill) && !isNaN(tipPercentage) && people > 0) {
