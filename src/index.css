@@ -24,8 +24,9 @@ input[type="number"] {
 
 @media (min-width: 64rem) {
   body {
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+
     height: 100vh;
   }
 }
