@@ -4,6 +4,11 @@ This is a Tip Calculator app that allows users to calculate the correct tip and 
 
 ![screenshot](./public/desktop-preview.jpg)
 
+## Links
+
+- [Live Site](https://tip-calculator-app-typescript.vercel.app/)
+- [Frontend Mentor](https://www.frontendmentor.io/solutions/tip-calculator-app-react-typescript-va3Nw6zGvW)
+
 ## Features
 
 <!-- Write features with emojis -->
